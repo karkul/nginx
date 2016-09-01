@@ -14,7 +14,7 @@ COPY run.sh /
 ADD nginx.conf /etc/nginx/nginx.conf
 ADD global.conf /etc/nginx/conf.d/global.conf
 RUN mkdir -p /var/log/ngnix /var/cache/nginx && chmod -R 777 /var/log/ngnix /var/cache/nginx /var/lib/nginx/
-RUN touch /var/log/nginx/error.log && touch /var/log/nginx/default_access.log && chmod -R 666 /var/log/ngnix/*
+RUN chmod -R 666 /var/log/ngnix/*
 
 EXPOSE 80
 
