@@ -17,4 +17,5 @@ RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
 EXPOSE 80
 
+RUN chmod +x /run.sh
 CMD /run.sh
