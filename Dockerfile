@@ -13,7 +13,6 @@ RUN apt-get update && apt-get install -qy nginx fontconfig libxrender1 xfonts-ba
 COPY run.sh /
 ADD nginx.conf /etc/nginx/nginx.conf
 ADD global.conf /etc/nginx/conf.d/global.conf
-RUN echo "daemon off;" >> /etc/nginx/nginx.conf
 
 EXPOSE 80
 
